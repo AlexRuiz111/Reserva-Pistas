@@ -1,0 +1,93 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(150deg, #fafbff, #063e13);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 55px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+}
+
+#TituloInicioSesion { 
+    font-size: 24px; 
+    font-weight: 600; 
+    margin-bottom: 30px; 
+}
+
+.campo { 
+    text-align: left; 
+    margin-bottom: 15px; 
+}
+
+.campo label { 
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 5px 5px; 
+}
+
+.campo input { 
+    width: 100%; 
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    outline: none; 
+}
+
+.contenedor-botones { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+/* Estilo único para ambos botones */
+.boton {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.entrar { 
+    background: #628b5c;
+    color: white; 
+}
+.entrar:hover { 
+    background: #223516; 
+}
+
+.registro { 
+    background: #f0f0f0; 
+    color: #333; 
+}
+.registro:hover { 
+    background: #e0e0e0; 
+}
+
+.link-olvido { 
+    font-size: 13px;
+    color: #3968f4;
+    text-decoration: none; 
+}
+
+.link-olvido:hover { 
+    text-decoration: underline;
+    color: #333; 
+}
