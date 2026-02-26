@@ -5,20 +5,19 @@
 }
 
 body {
-    background: #fafbff;
-    min-height: 100vh;
+    background: linear-gradient(150deg, #fafbff, #063e13);
 }
 
 /* Navegación - Color verde del login */
 .navbar {
-    background: #628b5c;
+    background: #2a2c2a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 8%;
 }
 
-.logo-circular {
+.logo {
     width: 45px;
     height: 45px;
     background: white;
@@ -33,27 +32,73 @@ body {
     
 }
 
-
-
 /* Contenido Principal */
 .contenedor-principal {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 0 20px;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
 }
 
 .banner-foto {
-    width: 100%;
-    height: auto; /* Permite que la altura crezca con la imagen */
-    background: none; /* Elimina el fondo blanco */
-    border: none;     /* Elimina el recuadro negro */
-    border-radius: 0; /* Elimina las esquinas redondeadas */
-    padding: 0;
-    margin-bottom: 40px;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 20px;
+   
 }
 
 .banner-foto img {
-    width: 100%;      /* Hace la foto más amplia */
-    height: auto;
-    display: block;
+    width: 100%;  
+}
+
+#articulos-pagina {
+    margin: 7%;
+
+}
+
+.section-principal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.texto-imagen {
+    width: 50%;
+    font-size: 20px;
+}
+
+.imagenes-articulos{
+    width: 500px;
+    margin-right: 20px;
+}
+
+footer {
+    background: #2a2c2a;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.parrafos-color {
+    color: white;
+    font-size: 20px;
+ }
+
+.texto-interes {
+    color:white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  .section-principal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto-imagen, .imagenes-articulos {
+    width: 500px;
+  }
 }
