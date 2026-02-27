@@ -1,0 +1,72 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(150deg, #fafbff, #063e13);
+}
+
+.navbar {
+    background: #2a2c2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    
+}
+
+.imagen-competicion{
+    width: 250px;
+    margin-right: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    margin-left: 200px;
+    gap: 50px;
+}
+
+.contenedor-competicion {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 15px;
+}
+
+.boton-reserva {
+    width: 120px;
+    padding: 10px 0;
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 8px; 
+    font-size: 14px;
+    font-weight: bold;
+    
+    /* Transición suave para el efecto hover */
+    transition: all 0.8s ease;
+}
+
+.boton-reserva:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    transform: translateY(-5px); /* Pequeño salto hacia arriba */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
