@@ -30,7 +30,7 @@ body {
     
 }
 
-.imagen-competicion{
+.imagen-reserva {
     width: 250px;
     margin-right: 20px;
 }
@@ -43,7 +43,7 @@ section {
     gap: 50px;
 }
 
-.contenedor-competicion {
+.contenedor-reserva {
     display: flex;
     flex-direction: column; 
     justify-content: center; 
