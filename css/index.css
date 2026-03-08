@@ -122,3 +122,33 @@ body {
 #Texto-codigo {
     margin-top: 50px;
 }
+
+/* HORARIOS */
+.tabla-horarios {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #628b5c;
+    color: white;
+    
+}
+
+.tabla-horarios thead {
+    background-color: #000000;
+    color: #628b5c;
+}
+
+.tabla-horarios th, .tabla-horarios td {
+    padding: 15px;
+    text-align: left;
+}
+
+.boton-tabla {
+    color: white;
+
+}
+
+/* TICKET */
+
+#ticket {
+    margin-bottom: 40px;
+}

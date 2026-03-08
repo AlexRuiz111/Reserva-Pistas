@@ -9,6 +9,7 @@ body {
 
 .navbar {
     background: #2a2c2a;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +17,10 @@ body {
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-    background: white;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
 }
 
 .menu a {
@@ -27,19 +28,19 @@ body {
     text-decoration: none;
     margin-left: 30px;
     font-weight: 500;
-    
 }
 
-.imagen-competicion{
+.imagen-competicion {
     width: 250px;
     margin-right: 20px;
 }
 
-section {
+.section-competicion {
     display: flex;
     align-items: center;
-    margin: 50px;
-    margin-left: 200px;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
     gap: 50px;
 }
 
@@ -47,7 +48,13 @@ section {
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    gap: 15px;
+    gap: 30px;
+}
+
+.botones-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .boton-competicion {
@@ -59,14 +66,42 @@ section {
     border-radius: 8px; 
     font-size: 14px;
     font-weight: bold;
-    
-    /* Transición suave para el efecto hover */
+    cursor: pointer;
     transition: all 0.8s ease;
 }
 
 .boton-competicion:hover {
     background-color: #ffffff;
     color: #1a1a1a;
-    transform: translateY(-5px); /* Pequeño salto hacia arriba */
+    transform: translateY(-5px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 950px) {
+    .section-competicion {
+        flex-direction: column;
+        text-align: center;
+        margin-left: auto;
+        gap: 20px;
+    }
+
+    .imagen-competicion {
+        margin-right: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .botones-container {
+        justify-content: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .menu a {
+        margin: 0 10px;
+    }
 }

@@ -16,10 +16,15 @@ body {
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-    background: white;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
 }
 
 .menu a {
@@ -27,19 +32,18 @@ body {
     text-decoration: none;
     margin-left: 30px;
     font-weight: 500;
-    
 }
 
 .imagen-reserva {
     width: 250px;
-    margin-right: 20px;
 }
 
-section {
+.section-reserva {
     display: flex;
     align-items: center;
-    margin: 50px;
-    margin-left: 200px;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
     gap: 50px;
 }
 
@@ -48,6 +52,11 @@ section {
     flex-direction: column; 
     justify-content: center; 
     gap: 15px;
+}
+
+.botones-container {
+    display: flex;
+    gap: 10px;
 }
 
 .boton-reserva {
@@ -59,14 +68,46 @@ section {
     border-radius: 8px; 
     font-size: 14px;
     font-weight: bold;
-    
-    /* Transición suave para el efecto hover */
+    cursor: pointer;
     transition: all 0.8s ease;
 }
 
 .boton-reserva:hover {
     background-color: #ffffff;
     color: #1a1a1a;
-    transform: translateY(-5px); /* Pequeño salto hacia arriba */
+    transform: translateY(-5px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu a {
+        margin: 0 12px;
+    }
+
+    .section-reserva {
+        flex-direction: column;
+        text-align: center;
+        margin: 30px auto;
+        gap: 20px;
+    }
+
+    .imagen-reserva {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .botones-container {
+        justify-content: center;
+    }
 }

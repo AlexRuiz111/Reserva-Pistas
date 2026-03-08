@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
     
     <nav class="navbar">
-        <div class="logo"></div>
+        <img src="imagenes/juanjerrez.png" alt="Logo" class="logo">
         <div class="menu">
             <a href="http://localhost/reservaPistas/PaginaPrincipal.html"> Inicio </a>
             <a href="http://localhost/reservaPistas/Competiciones.html"> Competiciones </a>
@@ -19,33 +19,39 @@
     </nav>
 
     <article>
-        <section>
+        <section class="section-competicion">
             <img class="imagen-competicion" src="imagenes/competicion1.avif" alt="Futbol">
             <div class="contenedor-competicion"> 
-            <h2> FÚTBOL </h2>
-            <p> Las competiciones de futbol se realizarán con equipos aleatoios con los integrantes inscritos. </p>
-            <button class="boton-competicion" a href="#"> Inscribirse </button>
-            <button class="boton-competicion" a href="#"> Anteriores </button>
+                <h2> FÚTBOL </h2>
+                <p class="texto-imagen"> Las competiciones de futbol se realizarán con equipos aleatorios con los integrantes inscritos. </p>
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/InscribirseTorneo.html"><button class="boton-competicion"> Inscribirse </button></a>
+                    <a href="http://localhost/reservaPistas/CompeticionesAnterioresFutbol.html"><button class="boton-competicion"> Anteriores </button></a>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="section-competicion">
             <img class="imagen-competicion" src="imagenes/competicion2.png" alt="Tenis">
             <div class="contenedor-competicion">  
-            <h2> TENIS </h2> 
-            <p> Los jugadores podrán apuntarse a torneos individuales o por parejas. </p>
-            <button class="boton-competicion" a href="#"> Inscribirse </button>
-            <button class="boton-competicion" a href="#"> Anteriores </button>
+                <h2> TENIS </h2> 
+                <p class="texto-imagen"> Los jugadores podrán apuntarse a torneos individuales o por parejas. </p>
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/InscribirseTorneo.html"><button class="boton-competicion"> Inscribirse </button></a>
+                    <a href="http://localhost/reservaPistas/CompeticionesAnterioresTenis.html"><button class="boton-competicion"> Anteriores </button></a>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="section-competicion">
             <img class="imagen-competicion" src="imagenes/competicion3.png" alt="Padel">
             <div class="contenedor-competicion"> 
-            <h2> PÁDEL </h2>
-            <p> Los jugadores podran apuntarse a torneos individuales o por parejas. </p> 
-            <button class="boton-competicion" a href="#"> Inscribirse </button>
-            <button class="boton-competicion" a href="#"> Anteriores </button>
+                <h2> PÁDEL </h2>
+                <p class="texto-imagen"> Los jugadores podrán apuntarse a torneos individuales o por parejas. </p> 
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/InscribirseTorneo.html"><button class="boton-competicion"> Inscribirse </button></a>
+                    <a href="http://localhost/reservaPistas/CompeticionesAnterioresPadel.html"><button class="boton-competicion"> Anteriores </button></a>
+                </div>
             </div>
         </section>
     </article>

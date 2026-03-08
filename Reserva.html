@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo"></div>
+        <img src="imagenes/juanjerrez.png" alt="Logo" class="logo">
         <div class="menu">
             <a href="http://localhost/reservaPistas/PaginaPrincipal.html"> Inicio </a>
             <a href="http://localhost/reservaPistas/Competiciones.html"> Competiciones </a>
@@ -19,30 +19,36 @@
     </nav>
 
     <article>
-        <section>
+        <section class="section-reserva">
             <img class="imagen-reserva" src="imagenes/campofutbol.jpg" alt="Futbol">
             <div class="contenedor-reserva"> 
-            <h2> FÚTBOL </h2>
-            <p> ¡Arma tu equipo y domina el campo! Consulta los horarios disponibles para reservar tu pista y demuestra tu talento en el próximo partido. </p>
-            <button class="boton-reserva" a href="#"> Horarios </button>
+                <h2> FÚTBOL </h2>
+                <p> ¡Arma tu equipo y domina el campo! Consulta los horarios disponibles para reservar tu pista y demuestra tu talento en el próximo partido. </p>
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/Horarios.html"> <button class="boton-reserva"> Horarios </button> </a>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="section-reserva">
             <img class="imagen-reserva" src="imagenes/pistaTenis.webp" alt="Tenis">
             <div class="contenedor-reserva">  
-            <h2> TENIS </h2> 
-            <p> ¿Listo para el próximo set? Revisa nuestro calendario de pistas y elige el horario que mejor te venga para perfeccionar tu saque o retar a un rival. </p>
-            <button class="boton-reserva" a href="#"> Horarios </button>
+                <h2> TENIS </h2> 
+                <p> ¿Listo para el próximo set? Revisa nuestro calendario de pistas y elige el horario que mejor te venga para perfeccionar tu saque o retar a un rival. </p>
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/Horarios.html"> <button class="boton-reserva"> Horarios </button> </a>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="section-reserva">
             <img class="imagen-reserva" src="imagenes/pistaPadel.jpg" alt="Padel">
             <div class="contenedor-reserva"> 
-            <h2> PÁDEL </h2>
-            <p> La pista te espera para el próximo punto de partido. Consulta aquí las horas libres y reserva tu espacio para disfrutar del mejor pádel con tus amigos. </p> 
-            <button class="boton-reserva" a href="#"> Horarios </button>
+                <h2> PÁDEL </h2>
+                <p> La pista te espera para el próximo punto de partido. Consulta aquí las horas libres y reserva tu espacio para disfrutar del mejor pádel con tus amigos. </p> 
+                <div class="botones-container">
+                    <a href="http://localhost/reservaPistas/Horarios.html"> <button class="boton-reserva"> Horarios </button> </a>
+                </div>
             </div>
         </section>
     </article>
