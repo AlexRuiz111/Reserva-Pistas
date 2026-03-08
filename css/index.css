@@ -13,8 +13,8 @@ body {
     align-items: center;
 }
 
-#inicio {
-    background: white;
+#Bloque {
+    background: rgb(255, 255, 255);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 25px 55px rgba(0,0,0,0.2);
@@ -98,4 +98,27 @@ body {
 .link-olvido:hover { 
     text-decoration: underline;
     color: #333; 
+}
+
+/* REGISTRO / NUEVA CONTRASEÑA */
+
+#inicio {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 60px 60px rgba(0,0,0,0.2);
+    width: 700px;
+    text-align: center;
+}
+
+#Titulo { 
+    font-size: 24px; 
+    font-weight: 600; 
+    margin-bottom: 30px; 
+}
+
+/* CONFIRMAR CODIGO */
+
+#Texto-codigo {
+    margin-top: 50px;
 }
